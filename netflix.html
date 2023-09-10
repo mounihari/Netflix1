@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Define a background image or color */
+        body {
+            background-image: url('netflix-background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Create a navigation bar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #e50914;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li {
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        /* Create a hero section */
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Create a call to action button */
+        .cta-button {
+            background-color: #e50914;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Create a content section (you can add more content) */
+        .content {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Define a grid for content items */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        /* Style individual content items (sample cards) */
+        .content-item {
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-item h2 {
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Netflix Clone</div>
+        <ul>
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>My List</li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button class="cta-button">Watch Now</button>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Popular on Netflix</h2>
+        <div class="content-grid">
+            <!-- Sample Content Items (You can add more) -->
+            <div class="content-item">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+            </div>
+            <div class="content-item">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h2>Movie Title 2</h2>
+            </div>
+            <div class="content-item">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h2>Movie Title 3</h2>
+            </div>
+            <div class="content-item">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h2>Movie Title 4</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
